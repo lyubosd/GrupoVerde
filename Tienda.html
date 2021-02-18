@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <html lang="es">
@@ -16,6 +17,8 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
 
   </head>
 
@@ -58,11 +61,8 @@
           </div>
           <div class="mb-2 col-3 d-flex align-items-center align-self-center text-end" style="height: 100%">
             <form class="form-inline fs-1 px-4 text-end" style="width: 100%">
-              <i class="bi bi-cart4 px-4 fs-1"></i>
-             
-              <button  type="button" class="btn btn-primary "><i class="bi bi-person-fill px-2 py-1 d-inline-block"></i> Iniciar sesión</button>
-              <button  type="button" class="btn btn-secondary"><i class="bi bi-person-plus-fill px-2 py-1 d-inline-block"></i>Registrarse</button>
-        
+              <a  href="Carrito.html"  ><i class="bi bi-cart4 px-4 fs-1"></i></a>
+              <a  role="button" href="Iniciar.html" class="btn btn-primary" ><i class="bi bi-person-fill px-2 py-1 d-inline-block"></i> Iniciar sesión</a> 
           </form>
         </div>
       </div>
@@ -85,11 +85,11 @@
     
     
   </div>
-  <a class="carousel-control-prev" href="#carouselHomeControls" role="button" data-slide="anterior">
+  <a class="carousel-control-prev" href="#carouselHomeControls" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Anterior</span>
   </a>
-  <a class="carousel-control-next" href="#carouselHomeControls" role="button" data-slide="siguiente">
+  <a class="carousel-control-next" href="#carouselHomeControls" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Siguiente</span>
   </a>
@@ -113,7 +113,7 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/02-full.jpg" alt="" />
+                                <img class="img-fluid" src="assets/img/portfolio/01-full.jpg" alt="" />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Threads</div>
@@ -200,18 +200,18 @@
         <!-- Modal 1-->
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
-                <div class="modal-content"> 
+                <div class="modal-content">
+
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">NIKON D780 + 24-120MM F4G VR</h2>
-      
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/01-full.jpg/>
-                                    <p></p>
+                                    <h2 class="text-uppercase">Nikon</h2>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/01-full.jpg" alt="" />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                     <ul class="list-inline">
-                                        <li>Precio: 1.954,15 €</li>
+                                        <li>Precio: 1.000.99 € </li>
                                     </ul>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fas fa-times mr-1"></i>
@@ -228,22 +228,22 @@
         <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Canon RP 26MP</h2>
+                                    <h2 class="text-uppercase">Samsung</h2>
                        
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/02-full.jpg" alt="" />
                                     <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                     <ul class="list-inline">
-                                        <li>Category: Graphic Design</li>
+                                        <li>Precio: 1.843.15 €</li>
                                     </ul>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fas fa-times mr-1"></i>
-                                        Close Project
+                                        Salir
                                     </button>
                                 </div>
                             </div>
@@ -256,24 +256,22 @@
         <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <h2 class="text-uppercase">Nikon</h2>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/03-full.jpg" alt="" />
                                     <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                     <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Finish</li>
-                                        <li>Category: Identity</li>
+                                        <li>Precio: 1.145.00 €</li>
+                                    
                                     </ul>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fas fa-times mr-1"></i>
-                                        Close Project
+                                        Salir
                                     </button>
                                 </div>
                             </div>
@@ -286,24 +284,22 @@
         <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <h2 class="text-uppercase">Nikon</h2>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/04-full.jpg" alt="" />
                                     <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                     <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Lines</li>
-                                        <li>Category: Branding</li>
+                                        <li>Precio: 783.15 €</li>
+                                
                                     </ul>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fas fa-times mr-1"></i>
-                                        Close Project
+                                        Salir
                                     </button>
                                 </div>
                             </div>
@@ -316,24 +312,22 @@
         <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <h2 class="text-uppercase">Nikon</h2>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/05-full.jpg" alt="" />
                                     <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                     <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Southwest</li>
-                                        <li>Category: Website Design</li>
+                                        <li>Precio: 460.00 €</li>
+                                    
                                     </ul>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fas fa-times mr-1"></i>
-                                        Close Project
+                                        Salir
                                     </button>
                                 </div>
                             </div>
@@ -346,24 +340,21 @@
         <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <h2 class="text-uppercase">Nikon</h2>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/06-full.jpg" alt="" />
                                     <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                     <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Window</li>
-                                        <li>Category: Photography</li>
+                                        <li>Precio: 1.230.99 €</li>
                                     </ul>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fas fa-times mr-1"></i>
-                                        Close Project
+                                        Salir
                                     </button>
                                 </div>
                             </div>
@@ -377,21 +368,22 @@
       <div class="p-2" style="background-color:#7ede54">
         <div class="d-flex align-self-center justify-content-between">
             <div class="d-flex align-self-center">
-            ©  Copyright GreenPix 2021 </br>
-               Politica de privacidad | Terminos y Condiciones | Cookies</div>
-          <div class="text-start fs-2 d-flex justify-content-evenly">
-            <i class="bi bi-facebook d-flex align-items-center mx-2"></i>
-            <i class="bi bi-twitter d-flex align-items-center mx-2"></i>
-            <i class="bi bi-linkedin d-flex align-items-center mx-2"></i>
-            <i class="bi bi-instagram d-flex align-items-center mx-2"></i>
-            <i class="bi bi-youtube d-flex align-items-center mx-2"></i>
+            <a href="https://es.wikipedia.org/wiki/Cookie_(inform%C3%A1tica)"> ©  Copyright GreenPix 2021 </br>
+               Politica de privacidad | Terminos y Condiciones | Cookies</a></div>
+          
+          <div class="text-start fs-2 d-flex justify-content-evenly footer_links">
+           <a href="https://www.facebook.com/" class="bi bi-facebook d-flex align-items-center"></a>
+            <a href="https://www.twitter.com/ " class="bi bi-twitter d-flex align-items-center mx-2"></a>
+            <a href="https://www.linkedin.com/" class="bi bi-linkedin d-flex align-items-center mx-2"></a>
+            <a href="https://www.instagram.com/" class="bi bi-instagram d-flex align-items-center mx-2"></a>
+            <a href="https://www.youtube.com/" class="bi bi-youtube d-flex align-items-center mx-2"></a>
           </div>
           <div>
             <img src="img/logo.png" style="height: 100px">
           </div>
       </div>
-
     </footer>
+    
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>  
   </body>
