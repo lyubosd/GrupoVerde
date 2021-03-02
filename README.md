@@ -1,2 +1,0 @@
-# GrupoVerde
-RepositorioGitGrupoVerde
