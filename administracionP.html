@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.80.0">
+    <title>Dashboard Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="./css/dashboard.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="./GreenPix.html">GreenPix<img src="./img/logo.png" style="height:auto;max-width:50px;"></a>
+  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+  <ul class="navbar-nav px-3">
+    <li class="nav-item text-nowrap">
+      <a class="nav-link" href="Iniciar.html">Sign out</a>
+    </li>
+  </ul>
+</header>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+      <div class="position-sticky pt-3">
+        <ul class="nav flex-column mt-4">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./administracion.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+              Dashboard
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./administracionP.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+              Producto
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./administracionU.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+             Usuarios
+            </a>
+          </li>
+          
+        </ul>
+
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+          <span>Saved reports</span>
+          <a class="link-secondary" href="#" aria-label="Add a new report">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+          </a>
+        </h6>
+        <ul class="nav flex-column mb-2">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+
+              Current month
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              Last quarter
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              Social engagement
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              Year-end sale
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Producto</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+          <div class="btn-group me-2">
+            <button type="button" class="btn btn-sm btn-outline-secondary">Añadir Producto</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary">Eliminar Producto</button>
+          
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr class="simple-head">
+                        <th width="20%">
+                            <div class="bg-white h-100 w-100"> </div>
+                        </th>
+                        <th width="20%">
+                            <div class="mb-2">
+                                <div class="d-flex justify-content-between align-items-center"> <img src="https://m.media-amazon.com/images/I/61WNxdAeAoL._AC_SS350_.jpg" width="50"> <span class="d-block text-custom-truncate ml-1">Lenovo IdeaPad Slim 5i 11th Gen Intel Core i5 15.6” FHD IPS Thin & Light Laptop (8GB/1TB HDD+256GB</span> </div>
+                                <hr>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h6 class="mb-0">₹ 68,500.00</h6> <button class="btn btn-sm btn-primary">Add to cart</button>
+                                </div>
+                            </div>
+                        </th>
+                        <th width="20%">
+                            <div class="mb-2">
+                                <div class="d-flex justify-content-between align-items-center"> <img src="https://m.media-amazon.com/images/I/61WNxdAeAoL._AC_SS350_.jpg" width="50"> <span class="d-block text-custom-truncate ml-1">Lenovo IdeaPad Slim 5i 11th Gen Intel Core i5 15.6” FHD IPS Thin & Light Laptop (8GB/1TB HDD+256GB</span> </div>
+                                <hr>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h6 class="mb-0">₹ 68,500.00</h6> <button class="btn btn-sm btn-primary">Add to cart</button>
+                                </div>
+                            </div>
+                        </th>
+                        <th width="20%">
+                            <div class="mb-2">
+                                <div class="d-flex justify-content-between align-items-center"> <img src="https://m.media-amazon.com/images/I/61WNxdAeAoL._AC_SS350_.jpg" width="50"> <span class="d-block text-custom-truncate ml-1">Lenovo IdeaPad Slim 5i 11th Gen Intel Core i5 15.6” FHD IPS Thin & Light Laptop (8GB/1TB HDD+256GB</span> </div>
+                                <hr>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h6 class="mb-0">₹ 68,500.00</h6> <button class="btn btn-sm btn-primary">Add to cart</button>
+                                </div>
+                            </div>
+                        </th>
+                        <th width="20%">
+                            <div class="mb-2">
+                                <div class="d-flex justify-content-between align-items-center"> <img src="https://m.media-amazon.com/images/I/61WNxdAeAoL._AC_SS350_.jpg" width="50"> <span class="d-block text-custom-truncate ml-1">Lenovo IdeaPad Slim 5i 11th Gen Intel Core i5 15.6” FHD IPS Thin & Light Laptop (8GB/1TB HDD+256GB</span> </div>
+                                <hr>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h6 class="mb-0">₹ 68,500.00</h6> <button class="btn btn-sm btn-primary">Add to cart</button>
+                                </div>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Processor Name</th>
+                        <td class="base-item">Core i5</td>
+                        <td>Core i5</td>
+                        <td>Core i7</td>
+                        <td>R Series</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Screen Size</th>
+                        <td class="base-item">15.6 in</td>
+                        <td>15.6 in</td>
+                        <td>14.6 in</td>
+                        <td>16 in</td>
+                    </tr>
+                    <tr>
+                        <th>Operating system</th>
+                        <td class="base-item">Windows 10</td>
+                        <td>Windows 10 Home</td>
+                        <td>Windows 8</td>
+                        <td>Windows 10 pro</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Processor Name</th>
+                        <td class="base-item">Core i5</td>
+                        <td>Core i5</td>
+                        <td>Core i7</td>
+                        <td>R Series</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Screen Size</th>
+                        <td class="base-item">15.6 in</td>
+                        <td>15.6 in</td>
+                        <td>14.6 in</td>
+                        <td>16 in</td>
+                    </tr>
+                    <tr>
+                        <th>Operating system</th>
+                        <td class="base-item">Windows 10</td>
+                        <td>Windows 10 Home</td>
+                        <td>Windows 8</td>
+                        <td>Windows 10 pro</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Processor Name</th>
+                        <td class="base-item">Core i5</td>
+                        <td>Core i5</td>
+                        <td>Core i7</td>
+                        <td>R Series</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Screen Size</th>
+                        <td class="base-item">15.6 in</td>
+                        <td>15.6 in</td>
+                        <td>14.6 in</td>
+                        <td>16 in</td>
+                    </tr>
+                    <tr>
+                        <th>Operating system</th>
+                        <td class="base-item">Windows 10</td>
+                        <td>Windows 10 Home</td>
+                        <td>Windows 8</td>
+                        <td>Windows 10 pro</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Processor Name</th>
+                        <td class="base-item">Core i5</td>
+                        <td>Core i5</td>
+                        <td>Core i7</td>
+                        <td>R Series</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Screen Size</th>
+                        <td class="base-item">15.6 in</td>
+                        <td>15.6 in</td>
+                        <td>14.6 in</td>
+                        <td>16 in</td>
+                    </tr>
+                    <tr>
+                        <th>Operating system</th>
+                        <td class="base-item">Windows 10</td>
+                        <td>Windows 10 Home</td>
+                        <td>Windows 8</td>
+                        <td>Windows 10 pro</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Processor Name</th>
+                        <td class="base-item">Core i5</td>
+                        <td>Core i5</td>
+                        <td>Core i7</td>
+                        <td>R Series</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Screen Size</th>
+                        <td class="base-item">15.6 in</td>
+                        <td>15.6 in</td>
+                        <td>14.6 in</td>
+                        <td>16 in</td>
+                    </tr>
+                    <tr>
+                        <th>Operating system</th>
+                        <td class="base-item">Windows 10</td>
+                        <td>Windows 10 Home</td>
+                        <td>Windows 8</td>
+                        <td>Windows 10 pro</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Processor Name</th>
+                        <td class="base-item">Core i5</td>
+                        <td>Core i5</td>
+                        <td>Core i7</td>
+                        <td>R Series</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Screen Size</th>
+                        <td class="base-item">15.6 in</td>
+                        <td>15.6 in</td>
+                        <td>14.6 in</td>
+                        <td>16 in</td>
+                    </tr>
+                    <tr>
+                        <th>Operating system</th>
+                        <td class="base-item">Windows 10</td>
+                        <td>Windows 10 Home</td>
+                        <td>Windows 8</td>
+                        <td>Windows 10 pro</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+  </div>
+     
+    </main>
+  </div>
+</div>
+
+
+    </body>
+</html>
